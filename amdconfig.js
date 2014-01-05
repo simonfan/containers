@@ -1,34 +1,34 @@
 require.config({
-	// cache busting
-	urlArgs: 'bust=' + Math.random(),
-	// base url is the root.
-	baseUrl: '/',
-	// remember: paths are relative to the / root.
+	urlArgs: 'bust=0.05297449394129217',
+	baseUrl: '/src',
 	paths: {
-		requirejs: 'bower_components/requirejs/requirejs',
-		text: 'bower_components/requirejs-text/text',
-
-		mocha: 'node_modules/mocha/mocha',
-		should: 'node_modules/should/should',
-
-		// the module
-		'containers': 'src/containers',
+		requirejs: '../bower_components/requirejs/require',
+		text: '../bower_components/requirejs-text/text',
+		mocha: '../node_modules/mocha/mocha',
+		should: '../node_modules/should/should',
+		containers: 'index',
+		jquery: '../bower_components/jquery/jquery',
+		qunit: '../bower_components/qunit/qunit/qunit',
+		lodash: '../bower_components/lodash/dist/lodash.compat',
+		'requirejs-text': '../bower_components/requirejs-text/text',
+		underscore: '../bower_components/underscore/underscore'
 	},
-
-	// predefined shims... (we already know they are needed)
 	shim: {
 		backbone: {
 			exports: 'Backbone',
-			deps: ['jquery', 'underscore'],
+			deps: [
+				'jquery',
+				'underscore'
+			]
 		},
 		underscore: {
-			exports: '_',
+			exports: '_'
 		},
 		mocha: {
-			exports: 'mocha',
+			exports: 'mocha'
 		},
 		should: {
 			exports: 'should'
 		}
-	},
+	}
 });

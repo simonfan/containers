@@ -12,7 +12,7 @@
 if (typeof define !== 'function') { var define = require('amdefine')(module) }
 /* jshint ignore:end */
 
-define(["lodash"], function (Lodash) {
+define(["lodash"], function (_) {
 	'use strict';
 
 	function containsAll(container, contained) {

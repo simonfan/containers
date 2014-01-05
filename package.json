@@ -1,7 +1,7 @@
 {
   "name": "containers",
-  "main": "./src/containers",
-  "version": "0.0.0",
+  "main": "./src",
+  "version": "0.0.1",
   "description": "Some module...",
   "repository": {
     "type": "git",

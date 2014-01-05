@@ -2,7 +2,7 @@
 
 	var mod = typeof define !== 'function' ?
 		// node
-		'.././src/containers' :
+		'.././src' :
 		// browser
 		'containers',
 		// dependencies for the test
